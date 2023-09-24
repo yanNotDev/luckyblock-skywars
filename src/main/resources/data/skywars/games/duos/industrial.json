@@ -1,0 +1,13 @@
+{
+  "type": "skywars:skywars",
+  "name": "SkyWars Industrial (Duos)",
+  "icon": "minecraft:yellow_terracotta",
+  "map": {
+    "id": "skywars:industrial"
+  },
+  "refills": 2,
+  "refill_mins": 2,
+  "time_limit_mins": 10,
+  "team_size": 2,
+  "kits": true
+}

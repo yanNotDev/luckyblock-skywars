@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "skywars:anduril",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:sharpness": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

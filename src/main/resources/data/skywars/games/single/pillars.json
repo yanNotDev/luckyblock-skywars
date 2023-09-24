@@ -1,0 +1,12 @@
+{
+  "type": "skywars:skywars",
+  "name": "SkyWars Pillars",
+  "icon": "minecraft:mossy_cobblestone",
+  "map": {
+    "id": "skywars:pillars"
+  },
+  "refills": 2,
+  "refill_mins": 2,
+  "time_limit_mins": 10,
+  "kits": true
+}

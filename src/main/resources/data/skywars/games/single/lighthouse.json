@@ -1,0 +1,12 @@
+{
+  "type": "skywars:skywars",
+  "name": "SkyWars Lighthouse",
+  "icon": "minecraft:red_glazed_terracotta",
+  "map": {
+    "id": "skywars:lighthouse"
+  },
+  "refills": 2,
+  "refill_mins": 2,
+  "time_limit_mins": 10,
+  "kits": true
+}

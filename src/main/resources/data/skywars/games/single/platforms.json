@@ -1,0 +1,12 @@
+{
+  "type": "skywars:skywars",
+  "name": "SkyWars Platforms",
+  "icon": "minecraft:polished_andesite",
+  "map": {
+    "id": "skywars:platforms"
+  },
+  "refills": 2,
+  "refill_mins": 2,
+  "time_limit_mins": 10,
+  "kits": true
+}
