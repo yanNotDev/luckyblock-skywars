@@ -55,8 +55,11 @@
   "block.skywars.gold_launch_pad": "Gold Launch Pad",
   "block.skywars.red_lucky_block": "Weaponry Lucky Block",
 
-  "item.skywars.anduril":  "Andüril",
+  "item.skywars.anduril":  "§aAndüril",
   "item.skywars.axe_of_perun":  "Axe of Perun",
   "item.skywars.sword_of_justice": "Sword of Justice",
-  "item.skywars.carrot_corrupter": "Carrot Corrupter"
+  "item.skywars.carrot_corrupter": "Carrot Corrupter",
+  "item.skywars.aspect_of_the_end": "§9Aspect of the End",
+
+  "tooltip.skywars.aspect_of_the_end": "Teleports remaining: %s"
 }

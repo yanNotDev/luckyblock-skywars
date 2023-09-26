@@ -22,6 +22,7 @@ public class ModItemGroups {
                 entries.add(AXE_OF_PERUN);
                 entries.add(SWORD_OF_JUSTICE);
                 entries.add(CARROT_CORRUPTER);
+                entries.add(ASPECT_OF_THE_END);
             }))
             .build();
     public static void registerItemGroups() {

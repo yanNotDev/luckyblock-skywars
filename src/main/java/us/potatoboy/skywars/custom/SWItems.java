@@ -18,10 +18,7 @@ import us.potatoboy.skywars.SkyWars;
 import us.potatoboy.skywars.custom.block.LaunchPadBlock;
 import us.potatoboy.skywars.custom.block.LaunchPadBlockEntity;
 import us.potatoboy.skywars.custom.block.LuckyBlock;
-import us.potatoboy.skywars.custom.item.Anduril;
-import us.potatoboy.skywars.custom.item.AxeOfPerun;
-import us.potatoboy.skywars.custom.item.CarrotCorrupter;
-import us.potatoboy.skywars.custom.item.SwordOfJustice;
+import us.potatoboy.skywars.custom.item.*;
 
 public class SWItems {
     public static final Block GOLD_LAUNCH_PAD = new LaunchPadBlock(AbstractBlock.Settings.copy(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE).strength(100).noCollision(), Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE);
@@ -33,6 +30,7 @@ public class SWItems {
     public static final Item AXE_OF_PERUN = new AxeOfPerun(ToolMaterials.DIAMOND, 2, -3.0f, new FabricItemSettings());
     public static final Item SWORD_OF_JUSTICE = new SwordOfJustice(ToolMaterials.IRON, 3, -2.4f, new FabricItemSettings());
     public static final Item CARROT_CORRUPTER = new CarrotCorrupter(new FabricItemSettings().maxCount(1));
+    public static final Item ASPECT_OF_THE_END = new AspectOfTheEnd(ToolMaterials.DIAMOND, 3, -2.4f, new FabricItemSettings());
     public static void register() {
         register("gold_launch_pad", GOLD_LAUNCH_PAD);
         register("iron_launch_pad", IRON_LAUNCH_PAD);
@@ -45,6 +43,7 @@ public class SWItems {
         registerItem("axe_of_perun", AXE_OF_PERUN);
         registerItem("sword_of_justice", SWORD_OF_JUSTICE);
         registerItem("carrot_corrupter", CARROT_CORRUPTER);
+        registerItem("aspect_of_the_end", ASPECT_OF_THE_END);
     }
 
     private static <T extends Block> T register(String id, T block) {
