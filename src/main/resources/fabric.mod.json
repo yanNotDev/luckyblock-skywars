@@ -12,6 +12,9 @@
   "entrypoints": {
     "main": [
       "us.potatoboy.skywars.SkyWars"
+    ],
+    "client": [
+      "us.potatoboy.skywars.custom.client.ArrowClientMod"
     ]
   },
   "mixins": [

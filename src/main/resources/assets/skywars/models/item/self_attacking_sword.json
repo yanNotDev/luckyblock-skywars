@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "skywars:item/self_attacking_sword"
+  }
+}

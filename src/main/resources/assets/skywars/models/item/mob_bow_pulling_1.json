@@ -1,0 +1,6 @@
+{
+  "parent": "skywars:item/mob_bow",
+  "textures": {
+    "layer0": "skywars:item/mob_bow_pulling_1"
+  }
+}

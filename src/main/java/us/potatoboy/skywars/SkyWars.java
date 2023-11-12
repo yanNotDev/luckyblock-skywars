@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import us.potatoboy.skywars.custom.ModItemGroups;
 import us.potatoboy.skywars.custom.SWItems;
+import us.potatoboy.skywars.events.registerEvents;
 import us.potatoboy.skywars.game.SkyWarsConfig;
 import us.potatoboy.skywars.game.SkyWarsWaiting;
 import us.potatoboy.skywars.kit.KitRegistry;
@@ -34,7 +35,7 @@ public class SkyWars implements ModInitializer {
         SWItems.register();
 
         KitRegistry.register();
-//        registerEvents.registerEvent();
+        registerEvents.registerEvent();
 
     }
 

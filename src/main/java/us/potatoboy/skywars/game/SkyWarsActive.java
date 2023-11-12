@@ -18,12 +18,16 @@ import net.minecraft.item.ArrowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.network.packet.s2c.play.ScreenHandlerSlotUpdateS2CPacket;
-import net.minecraft.screen.ScreenHandler;
+import net.minecraft.scoreboard.Scoreboard;
+import net.minecraft.scoreboard.Team;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.text.*;
+import net.minecraft.text.MutableText;
+import net.minecraft.text.Style;
+import net.minecraft.text.Text;
+import net.minecraft.text.TextColor;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
@@ -184,6 +188,10 @@ public class SkyWarsActive {
         for (ServerPlayerEntity player : this.gameSpace.getPlayers()) {
             this.globalSidebar.removePlayer(player);
         }
+        Scoreboard scoreboard = this.world.getScoreboard();
+        for (Team team : scoreboard.getTeams()) {
+            scoreboard.removeTeam(team);
+        }
     }
 
     private void addPlayer(ServerPlayerEntity player) {
@@ -224,6 +232,17 @@ public class SkyWarsActive {
         this.spawnSpectator(player);
 
         eliminatePlayer(PlayerRef.of(player));
+        Scoreboard scoreboard = this.world.getScoreboard();
+        Team team = scoreboard.getPlayerTeam(player.getEntityName());
+
+        if (team != null) {
+            scoreboard.removePlayerFromTeam(player.getEntityName(), team);
+            for (String entity : team.getPlayerList()) {
+                this.world.getEntity(UUID.fromString(entity)).kill();
+            }
+
+            scoreboard.removeTeam(team);
+        }
         return ActionResult.FAIL;
     }
 

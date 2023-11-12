@@ -1,4 +1,6 @@
 {
+  "blank" : "",
+
   "gameType.skywars.skywars": "SkyWars",
 
   "text.skywars.select_kit": "Select Your Kit",
@@ -60,6 +62,15 @@
   "item.skywars.sword_of_justice": "Sword of Justice",
   "item.skywars.carrot_corrupter": "Carrot Corrupter",
   "item.skywars.aspect_of_the_end": "§9Aspect of the End",
+  "item.skywars.self_attacking_sword": "Self-Attacking Sword",
+  "item.skywars.explosive_bow": "§cExplosive Bow",
+  "item.skywars.mob_bow": "§6Mob Bow",
+  "item.skywars.upgrade_book": "Upgrade Book",
+  "item.skywars.exodus": "Exodus",
 
-  "tooltip.skywars.aspect_of_the_end": "Teleports remaining: %s"
+  "tooltip.skywars.aspect_of_the_end": "§7Teleports you 8 blocks ahead.",
+  "tooltip.skywars.aspect_of_the_end.uses": "§7Has %s §7uses.",
+  "tooltip.skywars.aspect_of_the_end.uses.singular": "§7Has §r1 §7use.",
+  "tooltip.skywars.exodus": "§7Blood inside BLT."
+
 }

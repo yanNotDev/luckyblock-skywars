@@ -1,0 +1,6 @@
+{
+  "parent": "skywars:item/explosive_bow",
+  "textures": {
+    "layer0": "skywars:item/explosive_bow_pulling_2"
+  }
+}
