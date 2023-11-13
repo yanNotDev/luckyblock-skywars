@@ -16,9 +16,6 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     EXODUS("exodus", 33, Util.make(new EnumMap(ArmorItem.Type.class), map -> {
-//        map.put(ArmorItem.Type.BOOTS, 3);
-//        map.put(ArmorItem.Type.LEGGINGS, 6);
-//        map.put(ArmorItem.Type.CHESTPLATE, 8);
         map.put(ArmorItem.Type.HELMET, 3);
     }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0f, 0.0f);
 
